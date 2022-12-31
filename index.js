@@ -14,8 +14,7 @@ export async function createConnection() {
   return client;
 }
 app.get("/", async(request, response) => {
-  const client = await createConnection();
-  response.send(client)
+  response.send("please append appropriate endpoints");
 })
 app.get("/users", async (request, response) => {
   const client = await createConnection();
